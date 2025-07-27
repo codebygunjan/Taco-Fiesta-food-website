@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #fff8f0;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #e74c3c;
+    color: aliceblue;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.head-sec h1 {
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+}
+
+.head-sec p {
+     font-size: 1.3rem;
+     margin-bottom: 25px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.head-sec a {
+      background-color: #fff;
+      padding: 12px 25px;
+      color: #e74c3c;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      border-radius: 30px;
+}
+
+#menu {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fbd4b4;
+}
+
+#menu h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+
+}
+
+.menu-card {
+  border-radius: 15px;
+  background-color: rgba(202, 173, 235, 0.8);
+  box-shadow: 0 7px 15px rgba(0,0,0,0.9);
+  padding: 10px;
+  margin: 30px;
+  width: 90%;
+  text-align: center; 
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-card img {
+  width: 30%;
+  height: 330px;
+  border-radius: 12px;
+}
+
+.menu-card .desc {
+  font-size: 1rem;
+  color: #3d3c3c;
+    margin: 6px;
+  font-style: italic;
+}
+
+.menu-card .stars {
+  color: blue;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.menu-card h3 {
+  margin: 15px 0 10px;
+  font-size: 2.2rem;
+  color: #d96601f2;
+  text-shadow: 2px 2px 2px  #f7f5f4;
+}
+
+.menu-card p {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.menu-card button {
+  background-color: #e67e22;
+  padding: 10px 15px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  animation: zoom 1s infinite ease-in-out;
+}
+
+@keyframes zoom {
+
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* offer section  */
+
+#offers {
+  background-color: #ffe0b2;
+  padding: 12px 5px;
+  text-align: center;
+}
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+#offers h2 {
+   font-size: 2rem;
+   color: yellow;
+   padding: 15px 20px;
+   display: inline-block;
+   border-radius: 15px;
+   background-color: orangered;
+   margin-bottom: 20px;
+   animation: zoom 1.5s infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+.offer-card {
+  background-color: white;
+    padding: 25px;
+    border: 2px solid orangered;
+    border-radius: 15px;
+      box-shadow: 0 9px 10px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    margin-bottom: 15px;
+}
+
+.offer-card h3 {
+  font-size: 1.3rem;
+  padding-bottom: 17px;
+  color: black;
+}
+
+.offer-card p {
+  font-size: 1.1rem;
+    color: #333;
+}
+
+/* about section  */
+ 
+#about {
+  padding: 10px 0;
+  background-color: #f6edda;
+}
+
+.about-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin: auto;
+    padding-right: 30px;
+}
+
+.about-text h2{
+    color:#d96601f2;
+    font-size: 1.7rem;
+    padding-bottom: 7px;
+}
+
+
+
+.box:hover {
+  box-shadow: 0 0 17px rgba(70, 2, 28, 0.9);
+  transform: scale(1.02);
+  transition: all 0.2s 0.3s linear;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #444;
+    padding-right: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.about-image img {
+    height: 220px;
+    width: 210px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+/* contact & Orders section */
+
+#contact {
+  background-color:#edd3bd;
+  padding: 30px 20px;
+}
+
+#contact h2 {
+  padding-bottom: 22px;
+  font-size: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.contact-form input , textarea {
+  padding: 10px;
+  font-size: 1rem;
+   border: 2px solid #e67e22;
+   border-radius: 6px;
+}
+
+.contact-form button {
+    background-color: orangered;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: orange;
+}
+
+
+#map {
+  margin-top: 2.2rem;
+   font-size: large;
+   width: 750px;
+}
+
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid black;
+  width: 500px;
+}
+
+/* footer section  */
+
+footer {
+  background-color: #1b1a19;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  gap: 25px;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.footer-container a {
+    font-size: 1.1rem ;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-container a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 15px;
+ }
+
+ .footer-info .para {
+  padding-top: 10px;
+  font-size: 17px;
+ text-decoration: underline;
+ }
+
+
+
+
+
+
+/* media Queries */
+
+@media (max-width:780px) {
+
+header {
+    padding: 32px 10px;
+    width: 100vw;
+}
+
+.head-sec h1 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.head-sec p {
+     font-size: 1rem;
+     margin-bottom: 25px;
+}
+
+.head-sec a {
+      padding: 7px 12px;
+      font-size: 0.9rem;  
+      border-radius: 15px;
+}
+
+#menu {
+    padding: 30px 10px;
+    width: 100wh;
+}
+
+#menu h2 {
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+
+}
+
+  .menu-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-card img {
+    width: 80%;
+    height: auto;
+  }
+
+.menu-card h3 {
+  margin: 12px 0 10px;
+  font-size: 1.7rem;
+}
+
+.menu-card p {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+
+/* offer section  */
+
+#offers {
+  padding: 20px 5px;
+}
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+#offers h2 {
+   padding: 15px 20px;
+   animation: zoom 1.5s infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}
+
+.offer-card {
+    width: 280px;
+}
+
+/* about section  */
+
+#about {
+  padding: 10px 0;
+  background-color: #f6edda;
+}
+
+.about-text h2{
+    color:#d96601f2;
+    font-size: 1.5rem;
+    padding-bottom: 7px;
+}
+
+.about-text p {
+    font-size: 0.9rem;
+}
+
+.about-image img {
+    height: 180px;
+    width: 170px;
+    border: 2px solid black;
+}
+
+/* contact & Orders section */
+
+#contact h2 {
+  padding-bottom: 22px;
+  font-size: 1.9rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.contact-form input , textarea {
+  padding: 10px;
+  font-size: 0.9rem;
+   border: 1px solid #e67e22;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: orange;
+}
+
+#map {
+  margin-top: 1.2rem;
+   font-size: large;
+   width: 100%;
+}
+
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 0.9px solid black;
+  width: 400px;
+}
+
+/* footer section  */
+
+.footer-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-container a {
+    font-size: 1rem ;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-container a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 15px;
+ }
+
+ .footer-info .para {
+  padding-top: 10px;
+  font-size: 17px;
+ text-decoration: underline;
+ }
+
+
+}
